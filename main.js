@@ -5,11 +5,11 @@ const inputEl = document.getElementById("input")
 const img = document.getElementById("img")
 const rating = document.getElementById("rating")
 
-//if (haslooked){
-   // document.getElementById("btn").disabled = true
-    //document.getElementById("btn").style.disabled = true
-    //rating.textContent =" معرفة التقييم مرة وحده يا بعد روحي"
-//}
+if (haslooked){
+   document.getElementById("btn").disabled = true
+    document.getElementById("btn").style.disabled = true
+    rating.textContent =" معرفة التقييم مرة وحده يا بعد روحي"
+}
 async function getdata(){
  fetch("data.json")
     .then(res => res.json())
